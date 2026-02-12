@@ -2,13 +2,13 @@
 之前刷题一直断断续续，没有养成一个刷题的习惯，建个仓库持续更新培养自己的刷题习惯
 ## 刷题遇到的Java技巧及反思：
 1.  ```List<Boolean> ans = new ArrayList<>(); 这里的数据类型要写Boolean,同时不能直接用索引访问具体的值，要用get方法，ans.get(i)，如果想修改要用set(i,value)，添加用add(value)```
-2.  ```Set<Character>mp = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')); 可以用Set去这么写，写一个类似这样的字典，然后用mp.contains()去判断字符串中是否包含对应的值。```
+2.  ```Set<Character>mp = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')); 可以用Set去这么写，写一个类似这样的字典，然后用mp.contains()去判断字符串中是否包含对应的值。st.put是添加```
 3.  ```Char [] a = s.toCharArray(); return new String(a); 一个是字符串转化为字符数组，这样方便遍历操作，一个是字符数组转换为字符串这样去返回字符串类型```
 4.  ```StringBuilder a = new StringBuilder();注意这里没有<>的泛型, a.setLength(0);这个方法是可以初始化StringBuilder的，a.append("abc")是往后插入字符串，a.insert(0,"abc")是往前插入字符串，a.toString()是把StringBuilder转化为字符串,a.charAt(i)是获取字符串中第i个字符，a.substring(i,j)是获取字符串中i到j的字符,a.length()是获取字符串的长度```
 5.  ```int[] arr = new int[10];Arrays.fill(arr, 1);初始化赋值的api方法,当然也可以用for循环```
 6.  ```Integer.MAX_VALUE是int的最大值，Integer.MIN_VALUE是最小值```
 7.  ```Map<Integer,Integer> mp = new HashMap<>(); mp.put(nums[i],mp.getOrDefault(nums[i],0) + 1)Java的map的put且值自增的方法```
-
+8.  ```遇到二维数组List<List<Integer>> ans = new ArrayList<>());，我们的是不好直接操作这个二维数组的，一般的做法是，再建几个一维数组，然后把一维数组的元素写进去之后，ans.add(一维数组),这样就可以了，如果想遍历，那么直接ans.get(i).get(j)就可以了```
 
 
 
