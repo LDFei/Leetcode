@@ -10,7 +10,7 @@
 7.  ```Map<Integer,Integer> mp = new HashMap<>(); mp.put(nums[i],mp.getOrDefault(nums[i],0) + 1)Java的map的put且值自增的方法,mp.containsKey(nums[i])判断nums[i]是否在mp中存在```
 8.  ```遇到二维数组List<List<Integer>> ans = new ArrayList<>());，我们的是不好直接操作这个二维数组的，一般的做法是，再建几个一维数组，然后把一维数组的元素写进去之后，ans.add(一维数组),这样就可以了，如果想遍历，那么直接ans.get(i).get(j)就可以了```
 9.  ```List 用size()来获取长度,String 用length()来获取长度,数组用 length 获取长度```
-
+10. ``` LinkedList<Integer> LL = new LinkedList<>();双向链表,LL.addLast();在链表后面添加，LL.addFirst();在链表前面添加，LL.removeLast();删除链表最后一个元素，LL.removeFirst();删除链表第一个元素```
 
 ## SQL语句理解及反思：
 1.  ```链接分外连接和内连接，外连接是取出所有数据，左外是以左表为基准，优先把左表的数据拿出来，右表没有的话默认为null，内连接是取出交集的数据，左表没有右表的数据，右表没有左表的数据都取不到```
