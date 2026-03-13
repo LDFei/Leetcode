@@ -11,7 +11,7 @@
 8.  ```遇到二维数组List<List<Integer>> ans = new ArrayList<>());，我们的是不好直接操作这个二维数组的，一般的做法是，再建几个一维数组，然后把一维数组的元素写进去之后，ans.add(一维数组),这样就可以了，如果想遍历，那么直接ans.get(i).get(j)就可以了```
 9.  ```List 用size()来获取长度,String 用length()来获取长度,数组用 length 获取长度```
 10. ``` LinkedList<Integer> LL = new LinkedList<>();双向链表,LL.addLast();在链表后面添加，LL.addFirst();在链表前面添加，LL.removeLast();删除链表最后一个元素，LL.removeFirst();删除链表第一个元素```
-
+11. ```Queue<TreeNode> q = new ArrayDeque<>(); 创建一个队列，q.add()新增，q.poll()弹出```
 ## SQL语句理解及反思：
 1.  ```链接分外连接和内连接，外连接是取出所有数据，左外是以左表为基准，优先把左表的数据拿出来，右表没有的话默认为null，内连接是取出交集的数据，左表没有右表的数据，右表没有左表的数据都取不到```
 2.  ```如果concat语句里的三个字段有一个为Null则这个数据里是否包含我要查询的字段都会查不出来因为'A' + 'B' + NULL = NULL 用||,+,concat都会有这个问题，但是我们用or就不会出现这种问题，但是我们写的sql需要兼容各类语言，一般使用concat所以我们需要限制数据库的表字段为非空字段。```
